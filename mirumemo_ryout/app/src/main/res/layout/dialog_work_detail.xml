@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画面名：作品詳細
+ボタン→遷移先：作品を編集→AdminWorkEditDialogFragment／感想→AdminReviewDialogFragment／閉じる→AdminWorksActivity
+ログアウト→MainActivity -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mm_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AdminWorkDetailActivity">
+    <!-- トップバー -->
+
+    <include
+        layout="@layout/layout_top_bar_admin" />
+
+    <!-- コンテンツ -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_work_image"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="@string/mm_common_iv_work_text"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_image_placeholder" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_work_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/mm_admin_work_detail_tv_work_title_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_work_genre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/mm_admin_work_detail_tv_work_genre_text"
+                android:textColor="@color/mm_text"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_work_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/mm_admin_work_detail_tv_work_category_text"
+                android:textColor="@color/mm_text"
+                android:textSize="14sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_work_synopsis"
+                android:layout_width="match_parent"
+                android:layout_height="130sp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/mm_admin_work_detail_tv_work_sypnosis_text"
+                android:textColor="@color/mm_text"
+                android:textSize="14sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:text="@string/mm_admin_work_detail_btn_close_text"
+                android:textColor="@color/mm_on_primary"
+                android:textSize="16sp"
+                app:backgroundTint="@color/mm_primary"
+                app:cornerRadius="12dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

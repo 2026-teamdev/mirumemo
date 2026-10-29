@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ボトムナビアイコン -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="24dp"
+    android:viewportHeight="24"
+    android:viewportWidth="24"
+    android:width="24dp">
+    <path
+        android:fillColor="@color/mm_primary"
+        android:pathData="M12,3 A9,9 0,1 0,21 12 A9,9 0,0 0,12 3 M12,6 L12,12 L16,15"
+        android:strokeColor="@color/mm_primary"
+        android:strokeWidth="1" />
+</vector>

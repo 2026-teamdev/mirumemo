@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画面名：作品情報一覧
+ボタン→遷移先：＋作品を追加する→AdminWorkRegisterActivity／作品タップ→AdminWorkDetailActivity
+ボトムナビ：nav_mypage→MyPageActivity／nav_record→RecordActivity／nav_history→HistoryActivity／nav_profile→ProfileActivity／nav_admin_works→AdminWorksActivity／nav_admin_users→AdminUsersActivity／nav_admin_stats→AdminStatsActivity／nav_admin_genres→AdminGenresActivity
+ログアウト→MainActivity -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mm_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AdminWorksActivity">
+    <!-- トップバー -->
+
+    <include
+        layout="@layout/layout_top_bar_admin" />
+
+    <!-- コンテンツ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add_work"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"
+            android:text="@string/mm_admin_works_btn_add_work_text"
+            android:textColor="@color/mm_on_primary"
+            android:textSize="16sp"
+            app:backgroundTint="@color/mm_primary"
+            app:cornerRadius="12dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_works"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/mm_list_background"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:itemCount="6"
+            tools:listitem="@layout/item_work" />
+    </LinearLayout>
+
+    <!-- ボトムナビゲーション -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mm_background"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_admin_bottom_nav" />
+</LinearLayout>

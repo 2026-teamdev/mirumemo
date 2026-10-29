@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画面名：ユーザ数・利用状況を集計
+ボタン→遷移先：ボトムナビで管理者各画面へ
+ボトムナビ：nav_mypage→MyPageActivity／nav_record→RecordActivity／nav_history→HistoryActivity／nav_profile→ProfileActivity／nav_admin_works→AdminWorksActivity／nav_admin_users→AdminUsersActivity／nav_admin_stats→AdminStatsActivity／nav_admin_genres→AdminGenresActivity
+ログアウト→MainActivity -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mm_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AdminStatsActivity">
+    <!-- トップバー -->
+
+    <include
+        layout="@layout/layout_top_bar_admin" />
+
+    <!-- コンテンツ -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/stats_area"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_stats_area" />
+    </LinearLayout>
+
+    <!-- ボトムナビゲーション -->
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mm_background"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_admin_bottom_nav" />
+</LinearLayout>

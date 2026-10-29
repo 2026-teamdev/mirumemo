@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 作品画像の仮画像 -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="180dp"
+    android:viewportHeight="180"
+    android:viewportWidth="120"
+    android:width="120dp">
+    <path
+        android:fillColor="@color/mm_list_background"
+        android:pathData="M0,0 L120,0 L120,180 L0,180 Z" />
+
+    <path
+        android:fillColor="@color/nav_unselected"
+        android:pathData="M20,115 L45,80 L65,100 L80,85 L100,115 Z M75,60 A10,10 0,1 0,95 60 A10,10 0,1 0,75 60" />
+</vector>

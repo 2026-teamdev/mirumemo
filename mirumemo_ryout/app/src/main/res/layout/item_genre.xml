@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画面名：ジャンル・カテゴリの1行
+操作：編集モード中に名前をタップして変更（処理は後工程） -->
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/mm_background"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/mm_border"
+    app:strokeWidth="1dp">
+
+    <!-- ジャンル・カテゴリ名 -->
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_genre_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:minHeight="56dp"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/mm_item_genre_tv_genre_name_text"
+        android:textColor="@color/mm_text"
+        android:textSize="18sp" />
+</com.google.android.material.card.MaterialCardView>

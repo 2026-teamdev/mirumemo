@@ -1,0 +1,24 @@
+# 作成した22画面
+
+- ログイン: `app/src/main/res/layout/activity_main.xml` / `app/src/main/java/com/example/logiks/mirumemo/MainActivity.kt`
+- 新規会員登録: `app/src/main/res/layout/activity_register.xml` / `app/src/main/java/com/example/logiks/mirumemo/RegisterActivity.kt`
+- 会員情報確認: `app/src/main/res/layout/activity_register_confirm.xml` / `app/src/main/java/com/example/logiks/mirumemo/RegisterConfirmActivity.kt`
+- メールアドレス入力: `app/src/main/res/layout/activity_password_email.xml` / `app/src/main/java/com/example/logiks/mirumemo/PasswordEmailActivity.kt`
+- メールアドレスURL送信済み: `app/src/main/res/layout/activity_password_email_sent.xml` / `app/src/main/java/com/example/logiks/mirumemo/PasswordEmailSentActivity.kt`
+- パスワード変更完了: `app/src/main/res/layout/activity_password_reset_complete.xml` / `app/src/main/java/com/example/logiks/mirumemo/PasswordResetCompleteActivity.kt`
+- パスワード再設定: `app/src/main/res/layout/activity_password_reset.xml` / `app/src/main/java/com/example/logiks/mirumemo/PasswordResetActivity.kt`
+- マイページ: `app/src/main/res/layout/activity_mypage.xml` / `app/src/main/java/com/example/logiks/mirumemo/MyPageActivity.kt`
+- 視聴記録: `app/src/main/res/layout/activity_record.xml` / `app/src/main/java/com/example/logiks/mirumemo/RecordActivity.kt`
+- 履歴: `app/src/main/res/layout/activity_history.xml` / `app/src/main/java/com/example/logiks/mirumemo/HistoryActivity.kt`
+- プロフィール: `app/src/main/res/layout/activity_profile.xml` / `app/src/main/java/com/example/logiks/mirumemo/ProfileActivity.kt`
+- 作品詳細: `app/src/main/res/layout/dialog_work_detail.xml` / `app/src/main/java/com/example/logiks/mirumemo/WorkDetailDialogFragment.kt`
+- プロフィール編集: `app/src/main/res/layout/dialog_profile_edit.xml` / `app/src/main/java/com/example/logiks/mirumemo/ProfileEditDialogFragment.kt`
+- 作品情報一覧: `app/src/main/res/layout/activity_admin_works.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminWorksActivity.kt`
+- 作品詳細: `app/src/main/res/layout/activity_admin_work_detail.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminWorkDetailActivity.kt`
+- 作品登録: `app/src/main/res/layout/activity_admin_work_register.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminWorkRegisterActivity.kt`
+- ユーザ情報一覧: `app/src/main/res/layout/activity_admin_users.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminUsersActivity.kt`
+- ユーザ情報管理: `app/src/main/res/layout/activity_admin_user_manage.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminUserManageActivity.kt`
+- ジャンル・カテゴリ一覧: `app/src/main/res/layout/activity_admin_genres.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminGenresActivity.kt`
+- ユーザ数・利用状況を集計: `app/src/main/res/layout/activity_admin_stats.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminStatsActivity.kt`
+- 感想編集: `app/src/main/res/layout/dialog_admin_review.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminReviewDialogFragment.kt`
+- 作品編集: `app/src/main/res/layout/dialog_admin_work_edit.xml` / `app/src/main/java/com/example/logiks/mirumemo/AdminWorkEditDialogFragment.kt`

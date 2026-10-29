@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Activity登録。MainActivityが起動画面 -->
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mirumemo">
+        <activity
+            android:exported="true"
+            android:name=".MainActivity">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:exported="false"
+            android:name=".RegisterActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".RegisterConfirmActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".PasswordEmailActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".PasswordEmailSentActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".PasswordResetCompleteActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".PasswordResetActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".MyPageActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".RecordActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".HistoryActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".ProfileActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminWorksActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminWorkDetailActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminWorkRegisterActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminUsersActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminUserManageActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminGenresActivity" />
+
+        <activity
+            android:exported="false"
+            android:name=".AdminStatsActivity" />
+    </application>
+</manifest>

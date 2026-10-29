@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- みるメモの仮ロゴ。同名画像に差し替え可能 -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="40dp"
+    android:viewportHeight="40"
+    android:viewportWidth="120"
+    android:width="120dp">
+    <path
+        android:fillColor="@color/mm_primary"
+        android:pathData="M8,0 L112,0 Q120,0 120,8 L120,32 Q120,40 112,40 L8,40 Q0,40 0,32 L0,8 Q0,0 8,0 Z" />
+
+    <path
+        android:fillColor="@color/mm_on_primary"
+        android:pathData="M49,10 L49,30 L72,20 Z" />
+</vector>

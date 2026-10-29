@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画面別表示文字列 -->
+<resources>
+    <string
+        name="app_name">みるメモ</string>
+
+    <string
+        name="mm_main_et_email_hint">メールアドレス</string>
+
+    <string
+        name="mm_main_et_password_hint">パスワード</string>
+
+    <string
+        name="mm_main_btn_login_text">ログイン</string>
+
+    <string
+        name="mm_main_tv_register_link_text"><u>会員登録お済でない方</u></string>
+
+    <string
+        name="mm_main_tv_forgot_password_link_text"><u>パスワードを忘れた場合</u></string>
+
+    <string
+        name="mm_main_tv_heading_text">ログイン</string>
+
+    <string
+        name="mm_register_et_user_name_hint">ユーザ名</string>
+
+    <string
+        name="mm_register_et_email_hint">メールアドレス</string>
+
+    <string
+        name="mm_register_et_password_hint">パスワード</string>
+
+    <string
+        name="mm_register_et_birth_date_hint">生年月日</string>
+
+    <string
+        name="mm_register_et_gender_hint">性別</string>
+
+    <string
+        name="mm_register_btn_confirm_text">確認</string>
+
+    <string
+        name="mm_register_btn_cancel_text">キャンセル</string>
+
+    <string
+        name="mm_register_tv_heading_text">新規会員登録</string>
+
+    <string
+        name="mm_register_confirm_tv_user_name_text">ユーザ名：未設定</string>
+
+    <string
+        name="mm_register_confirm_tv_email_text">メールアドレス：未設定</string>
+
+    <string
+        name="mm_register_confirm_tv_password_text">パスワード：●●●●●●●●</string>
+
+    <string
+        name="mm_register_confirm_tv_birth_date_text">生年月日：未設定</string>
+
+    <string
+        name="mm_register_confirm_tv_gender_text">性別：未設定</string>
+
+    <string
+        name="mm_register_confirm_btn_register_text">登録</string>
+
+    <string
+        name="mm_register_confirm_btn_back_text">戻る</string>
+
+    <string
+        name="mm_register_confirm_tv_heading_text">会員情報確認</string>
+
+    <string
+        name="mm_password_email_et_email_hint">メールアドレス</string>
+
+    <string
+        name="mm_password_email_btn_send_text">送信する</string>
+
+    <string
+        name="mm_password_email_btn_cancel_text">キャンセル</string>
+
+    <string
+        name="mm_password_email_tv_heading_text">メールアドレス入力</string>
+
+    <string
+        name="mm_password_email_sent_tv_message_text">パスワード再設定用のURLをメールで送信しました。</string>
+
+    <string
+        name="mm_password_email_sent_btn_login_text">ログイン画面へ</string>
+
+    <string
+        name="mm_password_email_sent_tv_heading_text">メールアドレスURL送信済み</string>
+
+    <string
+        name="mm_password_reset_complete_tv_message_text">パスワードを変更しました。</string>
+
+    <string
+        name="mm_password_reset_complete_btn_login_text">ログイン画面へ</string>
+
+    <string
+        name="mm_password_reset_complete_tv_heading_text">パスワード変更完了</string>
+
+    <string
+        name="mm_password_reset_et_new_password_hint">新しいパスワード</string>
+
+    <string
+        name="mm_password_reset_et_confirm_password_hint">確認用パスワード</string>
+
+    <string
+        name="mm_password_reset_btn_change_text">変更</string>
+
+    <string
+        name="mm_password_reset_tv_heading_text">パスワード再設定</string>
+
+    <string
+        name="mm_record_et_work_title_hint">作品名</string>
+
+    <string
+        name="mm_record_actv_watch_status_hint">視聴状況</string>
+
+    <string
+        name="mm_record_actv_watch_media_hint">視聴媒体</string>
+
+    <string
+        name="mm_record_tv_rating_label_text">評価</string>
+
+    <string
+        name="mm_record_et_review_hint">感想</string>
+
+    <string
+        name="mm_record_btn_record_submit_text">登録</string>
+
+    <string
+        name="mm_history_tab_like_text">いいね</string>
+
+    <string
+        name="mm_history_tab_history_text">視聴履歴</string>
+
+    <string
+        name="mm_profile_tv_user_name_text">ユーザ名：未設定</string>
+
+    <string
+        name="mm_profile_tv_email_text">メールアドレス：未設定</string>
+
+    <string
+        name="mm_profile_tv_birth_date_text">生年月日：未設定</string>
+
+    <string
+        name="mm_profile_tv_gender_text">性別：未設定</string>
+
+    <string
+        name="mm_profile_btn_profile_edit_text">プロフィール編集</string>
+
+    <string
+        name="mm_profile_btn_password_reset_text">パスワード再設定</string>
+
+    <string
+        name="mm_profile_btn_logout_text">ログアウト</string>
+
+    <string
+        name="mm_common_iv_work_text">作品画像</string>
+
+    <string
+        name="mm_work_detail_tv_work_title_text">作品名</string>
+
+    <string
+        name="mm_work_detail_tv_work_genre_text">ジャンル</string>
+
+    <string
+        name="mm_work_detail_tv_work_category_text">カテゴリ</string>
+
+    <string
+        name="mm_work_detail_btn_close_text">閉じる</string>
+
+    <string
+        name="mm_profile_edit_et_user_name_hint">ユーザ名</string>
+
+    <string
+        name="mm_profile_edit_et_email_hint">メールアドレス</string>
+
+    <string
+        name="mm_profile_edit_et_birth_date_hint">生年月日</string>
+
+    <string
+        name="mm_profile_edit_btn_save_text">保存</string>
+
+    <string
+        name="mm_profile_edit_btn_cancel_text">キャンセル</string>
+
+    <string
+        name="mm_admin_works_btn_add_work_text">＋作品を追加する</string>
+
+    <string
+        name="mm_admin_work_detail_tv_work_title_text">作品名</string>
+
+    <string
+        name="mm_admin_work_detail_tv_work_genre_text">ジャンル</string>
+
+    <string
+        name="mm_admin_work_detail_tv_work_category_text">カテゴリ</string>
+
+    <string
+        name="mm_admin_work_detail_tv_work_sypnosis_text">あらすじ</string>
+
+    <string
+        name="mm_admin_work_detail_btn_work_edit_text">作品を編集</string>
+
+    <string
+        name="mm_admin_work_detail_btn_work_delete_text">作品を削除</string>
+
+    <string
+        name="mm_admin_work_detail_btn_reviews_text">あらすじ</string>
+
+    <string
+        name="mm_admin_work_detail_btn_close_text">閉じる</string>
+
+    <string
+        name="mm_admin_work_register_btn_select_image_text">画像を選択</string>
+
+    <string
+        name="mm_admin_work_register_et_work_title_hint">作品名</string>
+
+    <string
+        name="mm_admin_work_register_et_work_sypnosis_hint">あらすじ</string>
+
+    <string
+        name="mm_admin_work_register_actv_work_genre_hint">ジャンル</string>
+
+    <string
+        name="mm_admin_work_register_actv_work_category_hint">カテゴリ</string>
+
+    <string
+        name="mm_admin_work_register_btn_work_register_text">登録</string>
+
+    <string
+        name="mm_admin_work_register_btn_cancel_text">キャンセル</string>
+
+    <string
+        name="mm_admin_users_tv_id_heading_text">ID</string>
+
+    <string
+        name="mm_admin_users_tv_user_name_heading_text">ユーザ名</string>
+
+    <string
+        name="mm_admin_users_tv_years_heading_text">年齢</string>
+
+    <string
+        name="mm_admin_users_tv_gender_heading_text">性別</string>
+
+    <string
+        name="mm_admin_user_manage_et_user_name_hint">ユーザ名</string>
+
+    <string
+        name="mm_admin_user_manage_et_email_hint">メールアドレス</string>
+
+    <string
+        name="mm_admin_user_manage_et_birth_date_hint">生年月日</string>
+
+    <string
+        name="mm_admin_user_manage_et_gender_hint">性別</string>
+
+    <string
+        name="mm_admin_user_manage_tv_violation_count_text">違反数：未集計</string>
+
+    <string
+        name="mm_admin_user_manage_btn_user_edit_text">編集</string>
+
+    <string
+        name="mm_admin_user_manage_btn_user_delete_text">削除</string>
+
+    <string
+        name="mm_admin_genres_btn_edit_text">編集</string>
+
+    <string
+        name="mm_admin_genres_btn_done_text">完了</string>
+
+    <string
+        name="mm_admin_review_btn_close_text">閉じる</string>
+
+    <string
+        name="mm_admin_work_edit_btn_select_image_text">画像を選択</string>
+
+    <string
+        name="mm_admin_work_edit_et_work_title_hint">作品名</string>
+
+    <string
+        name="mm_admin_work_edit_actv_work_genre_hint">ジャンル</string>
+
+    <string
+        name="mm_admin_work_edit_actv_work_category_hint">カテゴリ</string>
+
+    <string
+        name="mm_admin_work_edit_btn_save_text">保存</string>
+
+    <string
+        name="mm_admin_work_edit_btn_cancel_text">キャンセル</string>
+
+    <string
+        name="mm_common_btn_logout_text">ログアウト</string>
+
+    <string
+        name="mm_item_work_tv_work_title_text">作品名</string>
+
+    <string
+        name="mm_item_work_tv_work_genre_text">ジャンル</string>
+
+    <string
+        name="mm_item_work_tv_work_category_text">カテゴリ</string>
+
+    <string
+        name="mm_item_user_tv_user_name_text">ユーザ名</string>
+
+    <string
+        name="mm_item_user_tv_id_text">A00001</string>
+
+    <string
+        name="mm_item_user_tv_years_text">20~29</string>
+
+    <string
+        name="mm_item_user_tv_gender_text">答えたくない</string>
+
+    <string
+        name="mm_item_genre_tv_genre_name_text">ジャンル・カテゴリ名</string>
+
+    <string
+        name="mm_item_genre_btn_genre_edit_text">編集</string>
+
+    <string
+        name="mm_item_genre_btn_genre_delete_text">削除</string>
+
+    <string
+        name="mm_item_review_tv_review_user_text">ユーザ名</string>
+
+    <string
+        name="mm_item_review_tv_review_body_text">感想本文</string>
+
+    <string
+        name="mm_item_review_btn_review_edit_text">編集</string>
+
+    <string
+        name="mm_item_review_btn_review_delete_text">削除</string>
+
+    <string
+        name="mm_nav_item_mypage_text">マイページ</string>
+
+    <string
+        name="mm_nav_item_record_text">記録</string>
+
+    <string
+        name="mm_nav_item_history_text">履歴</string>
+
+    <string
+        name="mm_nav_item_profile_text">プロフィール</string>
+
+    <string
+        name="mm_nav_item_admin_works_text">作品情報一覧</string>
+
+    <string
+        name="mm_nav_item_admin_users_text">ユーザ情報</string>
+
+    <string
+        name="mm_nav_item_admin_stats_text">利用状況</string>
+
+    <string
+        name="mm_nav_item_admin_genres_text">ジャンル・カテゴリ</string>
+</resources>

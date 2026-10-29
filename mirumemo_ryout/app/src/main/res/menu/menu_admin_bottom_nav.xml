@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ボトムナビ／ボタン→遷移先：nav_mypage→MyPageActivity／nav_record→RecordActivity／nav_history→HistoryActivity／nav_profile→ProfileActivity／nav_admin_works→AdminWorksActivity／nav_admin_users→AdminUsersActivity／nav_admin_stats→AdminStatsActivity／nav_admin_genres→AdminGenresActivity -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_admin_works"
+        android:icon="@drawable/ic_nav_works"
+        android:title="@string/mm_nav_item_admin_works_text" />
+
+    <item
+        android:id="@+id/nav_admin_users"
+        android:icon="@drawable/ic_nav_users"
+        android:title="@string/mm_nav_item_admin_users_text" />
+
+    <item
+        android:id="@+id/nav_admin_stats"
+        android:icon="@drawable/ic_nav_stats"
+        android:title="@string/mm_nav_item_admin_stats_text" />
+
+    <item
+        android:id="@+id/nav_admin_genres"
+        android:icon="@drawable/ic_nav_genres"
+        android:title="@string/mm_nav_item_admin_genres_text" />
+</menu>

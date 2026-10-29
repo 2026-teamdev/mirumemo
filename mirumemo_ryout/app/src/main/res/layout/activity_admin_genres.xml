@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 画面名：ジャンル・カテゴリ一覧
+ボタン→操作：
+編集→編集モードに切り替える（処理は後工程）
+編集モード中に名前をタップ→ジャンル・カテゴリ名を変更（処理は後工程）
+通常時・編集時ともにスワイプ→赤背景の削除ボタンを表示（処理は後工程）
+ログアウト→MainActivity
+ボトムナビ：
+nav_admin_works→AdminWorksActivity
+nav_admin_users→AdminUsersActivity
+nav_admin_stats→AdminStatsActivity
+nav_admin_genres→AdminGenresActivity -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mm_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".AdminGenresActivity">
+
+    <!-- トップバー -->
+    <include
+        layout="@layout/layout_top_bar_admin" />
+
+    <!-- コンテンツ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- 右上の編集ボタン -->
+
+        <!-- ジャンル・カテゴリ一覧 -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_edit_genres"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:minHeight="48dp"
+            android:text="@string/mm_admin_genres_btn_edit_text"
+            android:textColor="@color/link_blue"
+            android:textSize="16sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_genres"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/mm_list_background"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="6"
+            tools:listitem="@layout/item_genre" />
+    </LinearLayout>
+
+    <!-- ボトムナビゲーション -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mm_background"
+        app:itemIconTint="@color/bottom_nav_item_color"
+        app:itemTextColor="@color/bottom_nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_admin_bottom_nav" />
+</LinearLayout>
