@@ -266,7 +266,7 @@
         name="mm_admin_user_manage_tv_violation_count_text">違反数：未集計</string>
 
     <string
-        name="mm_admin_user_manage_btn_user_edit_text">編集</string>
+        name="mm_admin_user_manage_btn_user_edit_text">変更</string>
 
     <string
         name="mm_admin_user_manage_btn_user_delete_text">削除</string>
