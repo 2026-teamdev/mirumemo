@@ -233,6 +233,9 @@
         name="mm_admin_work_register_btn_work_register_text">登録</string>
 
     <string
+        name="mm_admin_work_register_btn_work_review_text">感想を見る</string>
+
+    <string
         name="mm_admin_work_register_btn_cancel_text">キャンセル</string>
 
     <string

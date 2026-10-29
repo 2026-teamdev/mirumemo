@@ -76,6 +76,18 @@
                 android:textSize="14sp" />
 
             <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_work_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:minHeight="48dp"
+                android:text="@string/mm_admin_work_register_btn_work_review_text"
+                android:textColor="@color/mm_on_primary"
+                android:textSize="16sp"
+                app:backgroundTint="@color/mm_primary"
+                app:cornerRadius="12dp" />
+
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_work_edit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

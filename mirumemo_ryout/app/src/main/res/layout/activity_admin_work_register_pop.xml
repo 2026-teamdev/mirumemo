@@ -12,10 +12,6 @@
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".AdminWorkRegisterActivity">
-    <!-- トップバー -->
-
-    <include
-        layout="@layout/layout_top_bar_admin" />
 
     <!-- コンテンツ -->
 
@@ -117,6 +113,8 @@
                     android:textColor="@color/mm_text"
                     android:textSize="16sp" />
             </com.google.android.material.textfield.TextInputLayout>
+
+
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_work_register"

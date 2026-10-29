@@ -8,6 +8,6 @@ import androidx.fragment.app.DialogFragment
 
 class ProfileEditDialogFragment : DialogFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
-        return inflater.inflate(R.layout.dialog_profile_edit, container, false)
+        return inflater.inflate(R.layout.dialog_profile_edit_pop, container, false)
     }
 }
