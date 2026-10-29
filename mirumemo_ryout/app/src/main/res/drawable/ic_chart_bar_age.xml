@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="160dp"
+    android:viewportWidth="240"
+    android:viewportHeight="160">
+
+    <!-- 10代以下 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M10,150 L10,102 L30,102 L30,150 Z" />
+
+    <!-- 20代 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M50,150 L50,22 L70,22 L70,150 Z" />
+
+    <!-- 30代 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M90,150 L90,46 L110,46 L110,150 Z" />
+
+    <!-- 40代 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M130,150 L130,68 L150,68 L150,150 Z" />
+
+    <!-- 50代 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M170,150 L170,88 L190,88 L190,150 Z" />
+
+    <!-- 60代以上 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M210,150 L210,112 L230,112 L230,150 Z" />
+</vector>

@@ -2,7 +2,8 @@
 <!-- 画面名：作品情報一覧
 ボタン→遷移先：＋作品を追加する→AdminWorkRegisterActivity／作品タップ→AdminWorkDetailActivity
 ボトムナビ：nav_mypage→MyPageActivity／nav_record→RecordActivity／nav_history→HistoryActivity／nav_profile→ProfileActivity／nav_admin_works→AdminWorksActivity／nav_admin_users→AdminUsersActivity／nav_admin_stats→AdminStatsActivity／nav_admin_genres→AdminGenresActivity
-ログアウト→MainActivity -->
+ログアウト→MainActivity
+検索：キーボードの検索ボタンで一覧を絞り込む(処理は後工程) -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -38,16 +39,60 @@
             app:backgroundTint="@color/mm_primary"
             app:cornerRadius="12dp" />
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_works"
+        <!-- 検索欄 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_search"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"
+            android:hint="@string/mm_common_til_search_hint_work"
+            app:boxStrokeColor="@color/mm_primary"
+            app:startIconDrawable="@drawable/ic_search"
+            app:startIconTint="@color/mm_primary"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:minHeight="48dp"
+                android:paddingStart="48dp"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 検索結果の一覧と0件メッセージ -->
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/mm_list_background"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:spanCount="3"
-            tools:itemCount="6"
-            tools:listitem="@layout/item_work" />
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_works"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/mm_list_background"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_work" />
+
+            <TextView
+                android:id="@+id/tv_empty_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/mm_common_tv_empty_result_text"
+                android:textColor="@color/mm_text"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
     </LinearLayout>
 
     <!-- ボトムナビゲーション -->

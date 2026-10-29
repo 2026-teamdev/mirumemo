@@ -6,7 +6,8 @@ nav_admin_works→AdminWorksActivity
 nav_admin_users→AdminUsersActivity
 nav_admin_stats→AdminStatsActivity
 nav_admin_genres→AdminGenresActivity
-ログアウト→MainActivity -->
+ログアウト→MainActivity
+検索：キーボードの検索ボタンで一覧を絞り込む(処理は後工程) -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -29,6 +30,33 @@ nav_admin_genres→AdminGenresActivity
         android:layout_weight="1"
         android:padding="16dp"
         android:orientation="vertical">
+
+        <!-- 検索欄 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_search"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:minHeight="48dp"
+            android:hint="@string/mm_admin_users_til_search_hint"
+            app:boxStrokeColor="@color/mm_primary"
+            app:startIconDrawable="@drawable/ic_search"
+            app:startIconTint="@color/mm_primary"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="48dp"
+                android:minHeight="48dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:imeOptions="actionSearch"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <!-- 列見出し：一覧と同じ4等分 -->
         <LinearLayout
@@ -86,15 +114,32 @@ nav_admin_genres→AdminGenresActivity
         </LinearLayout>
 
         <!-- ユーザ一覧 -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_users"
+        <!-- 検索結果の一覧と0件メッセージ -->
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/mm_list_background"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="8"
-            tools:listitem="@layout/item_user" />
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_users"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/mm_list_background"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="8"
+                tools:listitem="@layout/item_user" />
+
+            <TextView
+                android:id="@+id/tv_empty_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/mm_common_tv_empty_result_text"
+                android:textColor="@color/mm_text"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
     </LinearLayout>
 
     <!-- ボトムナビゲーション -->

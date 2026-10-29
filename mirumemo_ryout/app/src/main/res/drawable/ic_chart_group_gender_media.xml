@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="160dp"
+    android:viewportWidth="120"
+    android:viewportHeight="160">
+
+    <!-- サブスク・男性 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M6,150 L6,35 L14,35 L14,150 Z" />
+
+    <!-- サブスク・女性 -->
+    <path
+        android:fillColor="@color/chart_color_2"
+        android:pathData="M16,150 L16,22 L24,22 L24,150 Z" />
+
+    <!-- サブスク・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M26,150 L26,108 L34,108 L34,150 Z" />
+
+    <!-- テレビ・男性 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M46,150 L46,58 L54,58 L54,150 Z" />
+
+    <!-- テレビ・女性 -->
+    <path
+        android:fillColor="@color/chart_color_2"
+        android:pathData="M56,150 L56,70 L64,70 L64,150 Z" />
+
+    <!-- テレビ・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M66,150 L66,117 L74,117 L74,150 Z" />
+
+    <!-- その他・男性 -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M86,150 L86,100 L94,100 L94,150 Z" />
+
+    <!-- その他・女性 -->
+    <path
+        android:fillColor="@color/chart_color_2"
+        android:pathData="M96,150 L96,106 L104,106 L104,150 Z" />
+
+    <!-- その他・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M106,150 L106,130 L114,130 L114,150 Z" />
+</vector>

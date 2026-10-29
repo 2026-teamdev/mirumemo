@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="160dp"
+    android:viewportWidth="120"
+    android:viewportHeight="160">
+
+    <!-- サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M10,150 L10,22 L30,22 L30,150 Z" />
+
+    <!-- テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M50,150 L50,60 L70,60 L70,150 Z" />
+
+    <!-- その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M90,150 L90,98 L110,98 L110,150 Z" />
+</vector>

@@ -30,4 +30,21 @@
 
     <color
         name="mm_border">#D9D9D9</color>
+
+    <!-- 集計グラフ用の色 -->
+    <color
+        name="chart_color_1">#6750A4</color>
+
+    <color
+        name="chart_color_2">#D81B60</color>
+
+    <color
+        name="chart_color_3">#9E9E9E</color>
+
+    <color
+        name="chart_color_4">#00897B</color>
+
+    <color
+        name="chart_color_5">#F9A825</color>
+
 </resources>

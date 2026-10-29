@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="240dp"
+    android:height="160dp"
+    android:viewportWidth="240"
+    android:viewportHeight="160">
+
+    <!-- 10代以下・サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M10,150 L10,120 L30,120 L30,150 Z" />
+
+    <!-- 10代以下・テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M10,120 L10,102 L30,102 L30,120 Z" />
+
+    <!-- 10代以下・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M10,102 L10,90 L30,90 L30,102 Z" />
+
+    <!-- 20代・サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M50,150 L50,80 L70,80 L70,150 Z" />
+
+    <!-- 20代・テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M50,80 L50,48 L70,48 L70,80 Z" />
+
+    <!-- 20代・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M50,48 L50,30 L70,30 L70,48 Z" />
+
+    <!-- 30代・サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M90,150 L90,92 L110,92 L110,150 Z" />
+
+    <!-- 30代・テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M90,92 L90,57 L110,57 L110,92 Z" />
+
+    <!-- 30代・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M90,57 L90,40 L110,40 L110,57 Z" />
+
+    <!-- 40代・サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M130,150 L130,110 L150,110 L150,150 Z" />
+
+    <!-- 40代・テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M130,110 L130,70 L150,70 L150,110 Z" />
+
+    <!-- 40代・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M130,70 L130,55 L150,55 L150,70 Z" />
+
+    <!-- 50代・サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M170,150 L170,122 L190,122 L190,150 Z" />
+
+    <!-- 50代・テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M170,122 L170,84 L190,84 L190,122 Z" />
+
+    <!-- 50代・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M170,84 L170,70 L190,70 L190,84 Z" />
+
+    <!-- 60代以上・サブスク -->
+    <path
+        android:fillColor="@color/chart_color_4"
+        android:pathData="M210,150 L210,132 L230,132 L230,150 Z" />
+
+    <!-- 60代以上・テレビ -->
+    <path
+        android:fillColor="@color/chart_color_5"
+        android:pathData="M210,132 L210,102 L230,102 L230,132 Z" />
+
+    <!-- 60代以上・その他 -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M210,102 L210,90 L230,90 L230,102 Z" />
+</vector>

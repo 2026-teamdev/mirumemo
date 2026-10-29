@@ -366,4 +366,94 @@
 
     <string
         name="mm_nav_item_admin_genres_text">ジャンル・カテゴリ</string>
+
+    <!-- 検索欄 -->
+    <string
+        name="mm_common_tv_empty_result_text">検索結果が存在しません</string>
+
+    <string
+        name="mm_common_til_search_hint_work">作品名で検索</string>
+
+    <string
+        name="mm_admin_users_til_search_hint">ユーザ名・IDで検索</string>
+
+    <string
+        name="mm_admin_genres_til_search_hint">ジャンル・カテゴリ名で検索</string>
+
+    <!-- 利用状況のダミーグラフ -->
+    <string
+        name="mm_common_stats_other_text">その他</string>
+
+    <string
+        name="mm_common_stats_gender_male_text">男性</string>
+
+    <string
+        name="mm_common_stats_gender_female_text">女性</string>
+
+    <string
+        name="mm_common_stats_media_subscription_text">サブスク</string>
+
+    <string
+        name="mm_common_stats_media_tv_text">テレビ</string>
+
+    <string
+        name="mm_common_stats_age_under_20_text">10代以下</string>
+
+    <string
+        name="mm_common_stats_age_20s_text">20代</string>
+
+    <string
+        name="mm_common_stats_age_30s_text">30代</string>
+
+    <string
+        name="mm_common_stats_age_40s_text">40代</string>
+
+    <string
+        name="mm_common_stats_age_50s_text">50代</string>
+
+    <string
+        name="mm_common_stats_age_60_plus_text">60代以上</string>
+
+    <string
+        name="mm_common_stats_dummy_note_text">※ダミー表示</string>
+
+    <string
+        name="mm_common_stats_placeholder_text">—</string>
+
+    <string
+        name="mm_admin_stats_tv_total_users_heading_text">総ユーザ数</string>
+
+    <string
+        name="mm_admin_stats_tv_total_views_heading_text">総視聴数</string>
+
+    <string
+        name="mm_admin_stats_tv_gender_heading_text">性別の割合</string>
+
+    <string
+        name="mm_admin_stats_iv_chart_gender_text">性別の割合(ダミー)</string>
+
+    <string
+        name="mm_admin_stats_tv_age_heading_text">年齢層別ユーザ数</string>
+
+    <string
+        name="mm_admin_stats_iv_chart_age_text">年齢層別ユーザ数(ダミー)</string>
+
+    <string
+        name="mm_admin_stats_tv_media_heading_text">視聴媒体別の視聴数</string>
+
+    <string
+        name="mm_admin_stats_iv_chart_media_text">視聴媒体別の視聴数(ダミー)</string>
+
+    <string
+        name="mm_admin_stats_tv_age_media_heading_text">年齢層ごとの視聴媒体</string>
+
+    <string
+        name="mm_admin_stats_iv_chart_age_media_text">年齢層ごとの視聴媒体(ダミー)</string>
+
+    <string
+        name="mm_admin_stats_tv_gender_media_heading_text">性別ごとの視聴媒体</string>
+
+    <string
+        name="mm_admin_stats_iv_chart_gender_media_text">性別ごとの視聴媒体(ダミー)</string>
+
 </resources>

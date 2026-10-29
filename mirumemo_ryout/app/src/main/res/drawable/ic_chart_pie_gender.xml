@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- 男性 45% -->
+    <path
+        android:fillColor="@color/chart_color_1"
+        android:pathData="M50,50 L50.000000,10.000000 A40,40 0 0,1 62.360680,88.042261 Z" />
+
+    <!-- 女性 40% -->
+    <path
+        android:fillColor="@color/chart_color_2"
+        android:pathData="M50,50 L62.360680,88.042261 A40,40 0 0,1 17.639320,26.488590 Z" />
+
+    <!-- その他 15% -->
+    <path
+        android:fillColor="@color/chart_color_3"
+        android:pathData="M50,50 L17.639320,26.488590 A40,40 0 0,1 50.000000,10.000000 Z" />
+</vector>

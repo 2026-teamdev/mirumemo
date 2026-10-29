@@ -9,7 +9,8 @@
 nav_admin_works→AdminWorksActivity
 nav_admin_users→AdminUsersActivity
 nav_admin_stats→AdminStatsActivity
-nav_admin_genres→AdminGenresActivity -->
+nav_admin_genres→AdminGenresActivity
+検索：キーボードの検索ボタンで一覧を絞り込む(処理は後工程) -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -35,26 +36,78 @@ nav_admin_genres→AdminGenresActivity -->
         <!-- 右上の編集ボタン -->
 
         <!-- ジャンル・カテゴリ一覧 -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_edit_genres"
-            style="@style/Widget.Material3.Button.TextButton"
-            android:layout_width="wrap_content"
+        <!-- 検索欄 -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:minHeight="48dp"
-            android:text="@string/mm_admin_genres_btn_edit_text"
-            android:textColor="@color/link_blue"
-            android:textSize="16sp" />
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_genres"
+            <!-- 検索欄 -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_search"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:hint="@string/mm_admin_genres_til_search_hint"
+                app:boxStrokeColor="@color/mm_primary"
+                app:startIconDrawable="@drawable/ic_search"
+                app:startIconTint="@color/mm_primary"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="48dp"
+                    android:minHeight="48dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:imeOptions="actionSearch"
+                    android:textColor="@color/mm_text"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_edit_genres"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="48dp"
+                android:text="@string/mm_admin_genres_btn_edit_text"
+                android:textColor="@color/link_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 検索結果の一覧と0件メッセージ -->
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/mm_list_background"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            tools:itemCount="6"
-            tools:listitem="@layout/item_genre" />
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_genres"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/mm_list_background"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="6"
+                tools:listitem="@layout/item_genre" />
+
+            <TextView
+                android:id="@+id/tv_empty_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/mm_common_tv_empty_result_text"
+                android:textColor="@color/mm_text"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </FrameLayout>
     </LinearLayout>
 
     <!-- ボトムナビゲーション -->
