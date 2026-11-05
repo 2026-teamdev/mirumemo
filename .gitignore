@@ -1,0 +1,10 @@
+CLAUDE.MD
+
+# astah が開いている間だけのロックファイル（0バイト・他の人の ProjectLockedException の原因になる）
+*.asta.lock
+
+# astah の自動バックアップ
+*.asta.bak
+
+# Java コンパイル成果物
+*.class
