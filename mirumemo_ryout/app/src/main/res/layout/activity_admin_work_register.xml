@@ -84,11 +84,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:hint="@string/mm_admin_work_register_actv_work_category_hint"
                 app:boxStrokeColor="@color/mm_primary"
                 style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
                 <com.google.android.material.textfield.MaterialAutoCompleteTextView
                     android:id="@+id/actv_work_category"
+                    android:hint="@string/mm_admin_work_register_actv_work_category_hint"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="none"
