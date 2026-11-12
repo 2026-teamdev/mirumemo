@@ -268,6 +268,23 @@ public class GenCls {
             }
         }
 
+        // 属性の型（String / Date など）は、astah が「属性の持ち主と同じパッケージ」に
+        // 未定義クラスを自動で作る。そのままだとエンティティ層に型のクラスが混ざって
+        // レイヤ分けが汚れるので、先に「型」パッケージの中で型名を1回ずつ使っておき、
+        // 型クラスをそちらに作らせてから本体の属性を作る。
+        // int / float / boolean のような astah の組み込み型は、ここでは何も作られない。
+        IPackage typePkg = me.createPackage(project, "型");
+        IClass probe = me.createClass(typePkg, "型の収集用");
+        Set<String> typeNames = new LinkedHashSet<>();
+        for (String name : entityOrder) {
+            for (AttrDef a : concept.attrs.getOrDefault(name, Collections.emptyList())) {
+                if (a.type != null && !a.type.isEmpty()) typeNames.add(a.type);
+            }
+        }
+        int ti = 0;
+        for (String t : typeNames) me.createAttribute(probe, "t" + (++ti), t);
+        me.delete(probe);                      // 型クラスだけ「型」パッケージに残る
+
         Map<String, IClass> classes = new LinkedHashMap<>();
         Map<String, INodePresentation> nodes = new LinkedHashMap<>();
 
