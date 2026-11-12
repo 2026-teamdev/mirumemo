@@ -20,6 +20,7 @@ public class Gen {
     static final double START_Y = 120;
     static final double STEP = 40;
     static final double RETURN_GAP = 25;
+    static final double RETURN_HEAD = 30;   // astah が返信を置き始めるまでの余白（最後のメッセージの下）
 
     static boolean withCreate = true;
 
@@ -184,13 +185,13 @@ public class Gen {
         double cursor = START_Y;
 
         for (Msg m : msgs) {
-            // 呼び出しから戻ってくる階層では、返信メッセージ用の高さを空けてから次を置く
+            // 呼び出しから戻ってくる階層では、返信メッセージ用の高さを空けてから次を置く。
+            // astah は返信を「実行仕様の末尾」から並べるので、本数ぶんの間隔に加えて頭の余白も要る。
+            int pending = 0;
             for (int i = m.depth; i < retOpen.length; i++) {
-                if (retOpen[i]) {
-                    cursor += RETURN_GAP;
-                    retOpen[i] = false;
-                }
+                if (retOpen[i]) { pending++; retOpen[i] = false; }
             }
+            if (pending > 0) cursor += RETURN_HEAD + pending * RETURN_GAP;
             INodePresentation src;
             if (m.depth == 0) {
                 src = lifelines.get(m.from);
