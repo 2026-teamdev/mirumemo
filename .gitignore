@@ -8,3 +8,9 @@ CLAUDE.MD
 
 # Java コンパイル成果物
 *.class
+
+# エディタのローカル設定
+.vscode/
+
+# Obsidian の vault 設定（docs 配下をノートとして開いたときに作られる）
+.obsidian/
