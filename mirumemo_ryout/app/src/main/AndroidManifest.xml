@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Activity登録。MainActivityが起動画面 -->
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,83 +12,68 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mirumemo">
         <activity
-            android:exported="true"
-            android:name=".MainActivity">
+            android:name=".ViolationReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
-                <action
-                    android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-                <category
-                    android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
-            android:exported="false"
-            android:name=".RegisterActivity" />
-
+            android:name=".RegisterActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".RegisterConfirmActivity" />
-
+            android:name=".RegisterConfirmActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".PasswordEmailActivity" />
-
+            android:name=".PasswordEmailActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".PasswordEmailSentActivity" />
-
+            android:name=".PasswordEmailSentActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".PasswordResetCompleteActivity" />
-
+            android:name=".PasswordResetCompleteActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".PasswordResetActivity" />
-
+            android:name=".PasswordResetActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".MyPageActivity" />
-
+            android:name=".MyPageActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".RecordActivity" />
-
+            android:name=".RecordActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".HistoryActivity" />
-
+            android:name=".HistoryActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".ProfileActivity" />
-
+            android:name=".ProfileActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminWorksActivity" />
-
+            android:name=".AdminWorksActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminWorkDetailActivity" />
-
+            android:name=".AdminWorkDetailActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminWorkRegisterActivity" />
-
+            android:name=".AdminWorkRegisterActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminUsersActivity" />
-
+            android:name=".AdminUsersActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminUserManageActivity" />
-
+            android:name=".AdminUserManageActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminGenresActivity" />
-
+            android:name=".AdminStatsActivity"
+            android:exported="false" />
         <activity
-            android:exported="false"
-            android:name=".AdminStatsActivity" />
+            android:name=".ViolationReportActivity"
+            android:exported="false" />
     </application>
+
 </manifest>

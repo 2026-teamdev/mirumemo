@@ -1,10 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!-- 画面名：違反報告画面
+ボタン→遷移先：
+報告する→報告完了後、呼び出し元の感想画面へ（処理は後工程）
+キャンセル→呼び出し元の感想画面へ（処理は後工程）
+報告理由は1つ選択。その他の入力欄は30文字以内。
+その他の選択時だけ入力欄を表示（Kotlinで制御）。
+TouchTargetSizeCheckは見た目を維持するため非表示にしています。 -->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mm_background"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
     tools:context=".ViolationReportActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!-- 見出し -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_report_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/mm_violation_report_tv_heading_text"
+            android:textColor="@color/mm_text"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- 案内文 -->
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_report_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/mm_violation_report_tv_description_text"
+            android:textColor="@color/mm_text"
+            android:textSize="14sp" />
+
+        <!-- 報告理由：グループ内で1つだけ選択可能 -->
+        <RadioGroup
+            android:id="@+id/rg_report_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_sexual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_sexual_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_violent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_violent_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_hateful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_hateful_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_harassment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_harassment_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_dangerous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_dangerous_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_self_harm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_self_harm_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_misinformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_misinformation_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_child_abuse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_child_abuse_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_terrorism"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_terrorism_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_spam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_spam_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <com.google.android.material.radiobutton.MaterialRadioButton
+                android:id="@+id/rb_report_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="20dp"
+                android:buttonTint="@color/mm_primary"
+                android:text="@string/mm_violation_report_rb_other_text"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <!-- その他の詳細：入力上限30文字 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_report_other"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:hint="@string/mm_violation_report_et_other_hint"
+            app:boxStrokeColor="@color/mm_primary"
+            app:counterEnabled="true"
+            app:counterMaxLength="30">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_report_other"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:maxLength="30"
+                android:minHeight="20dp"
+                android:minLines="1"
+                android:textColor="@color/mm_text"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 報告ボタン -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_report_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"
+            android:text="@string/mm_violation_report_btn_submit_text"
+            android:textColor="@color/mm_on_primary"
+            android:textSize="16sp"
+            app:backgroundTint="@color/mm_primary"
+            app:cornerRadius="12dp" />
+
+        <!-- キャンセルボタン -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_report_cancel"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="@string/mm_violation_report_btn_cancel_text"
+            android:textColor="@color/mm_primary"
+            android:textSize="16sp" />
+    </LinearLayout>
+</ScrollView>
